@@ -1,0 +1,46 @@
+Uma Agência de Viagens pretende gerir o planeamento e processamento das viagens dos
+seus clientes. Para cada Viagem devem ser registados um conjunto de parâmetros: Código
+da viagem (código único e sequencial), Tipo de pacote de férias (cruzeiro, hotel, resort,
+radical), Descritivo, Número de dias do pacote, Preço/dia do tipo de quarto (single, duplo,
+triplo ou suite) e preço/dia do tipo de estadia (pequeno almoço, meia-pensão ou pensãocompleta).
+O cliente faz o seu registo (se ainda não existir), com os dados código (atribuído
+sequencialmente), nome, nif, morada e contacto, e é registado o seu interesse por um
+determinado pacote de férias, incluindo data de início. Nesta situação, o contrato fica em
+estado de “interesse”. Se o cliente confirma, o estado passa a “contratado”, havendo,
+em regra o pagamento de um sinal, que deve ser registado.
+Alguns dias antes do início das férias, o restante pagamento deve ser regularizado, sendo
+registada essa operação, passando o contrato ao estado de “pago”.
+Depois de regressados de férias, os clientes são convidados a preencher um inquérito
+relativo à satisfação, sendo registado um conjunto de observações no contrato, com as
+informações fornecidas pelo cliente, devendo o estado do contrato ficar em “terminado”.
+TAREFAS
+Em consonância com o exposto, a aplicação a desenvolver deverá responder aos seguintes
+requisitos:
+a) Efectuar a introdução dos dados de registos de clientes, pacotes de férias e contratos,
+podendo ou não incluir dados adicionais relativos aos serviços adicionais contratados.
+Estes dados deverão ser guardados nos ficheiros ao sair-se da aplicação ou quando o
+utilizador o pretender. Os ficheiros a considerar são: Clientes.dat, Pacotes.dat
+(relativos aos pacotes de férias disponíveis) e Contratos.dat (para registar os contratos
+de pacotes de férias dos clientes);
+b) Importar os dados contidos em cada um dos ficheiros anteriores, para uma estrutura
+de dados adequada no arranque da aplicação;
+c) Visualizar, em ficheiros de texto, e/ou no ecrã, a informação relativa aos clientes,
+pacotes de férias e contratos; deve colocar alguns filtros de visualização;
+d) Alterar os dados de um cliente, pacotes de férias e contratos. Para os contratos, e
+para o estado, observar a lógica referida na introdução;
+e) Remover os contratos de clientes terminados e anteriores a data especificada. Dada a
+importância destes registos, deve exportá-los para um ficheiro de salvaguarda com um
+nome a especificar pelo utilizador antes de os remover;
+f) Pesquisar os contratos de cliente pelo nome do cliente e estado de execução a
+especificar pelo utilizador;
+g) Determinar o(s) clientes com valores de contratos mais elevados relativos a limites de
+datas especificados pelo utilizador;
+h) Calcular os valores já pagos, total, e por tipo de viagem, etc…;
+4
+i) Por vezes, é necessário importar dados de ficheiros texto, provindos de uma aplicação
+num dispositivo móvel, que são gerados sempre que o dispositivo está sem conexão à
+rede. Quando a conexão é retomada, esses ficheiros são transmitidos e para a BD
+central, onde devem ser integrados nos ficheiros principais. Os dados a importar são
+relativos a clientes novos e a contratos. Deve prever-se a situação de haver erros (e.g.,
+quando é recebido um contrato relativo a um cliente inexistente), sendo exibida
+mensagem adequada e enviado o erro havido para um ficheiro de texto.

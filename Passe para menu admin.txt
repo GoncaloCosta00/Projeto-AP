@@ -1,0 +1,3 @@
+Para entrar no menu de admin, é necessário palavra passe.
+
+Passe: 1a2b
